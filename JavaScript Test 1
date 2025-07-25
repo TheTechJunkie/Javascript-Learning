@@ -8,7 +8,7 @@
 onclick="document.getElementById('myImage').src='pic_bulbon.gif'>Turn on
 </button>
 
-img id ="myImage" src = "pic_bulboff.gif" style ="width:100px">
+img id ="myImage" src = "pic_bulboff.gif" style ="width:35px">
 
 <button
 oneclick="document.getElementById('myImage').src='pic_bulboff.gif'>Turn off
