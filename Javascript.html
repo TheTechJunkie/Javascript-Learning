@@ -2,19 +2,20 @@
 <html>
 <body>
 
-<h2>This is a test of interactive elements changing HTML elements</h2>
+<h2> This is an example of Javascript Statements. </h2>
 
-<button
-onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on
-</button>
+<p> id="demo"></p>
 
-<img id ="myImage" src = "pic_bulboff.gif" style ="width:35px">
+<script>
 
-<button
-onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off
-</button>  
+let x, y, z;
+
+x = 1
+y = 2
+z = x + y;
+
+document.getElementById("demo").innerHTML = "The value of z is " + z + ".";
+</script>
 
 </body>
 </html>
-
-
