@@ -4,11 +4,17 @@
 
 <h2> This is an example of Javascript Statements. </h2>
 
-<p id="demo"></p>
+<button onclick="myFunction()">Click Me</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
 
 <script>
-document.getElementById("demo").innerHTML = "Hello human."
-document.getElementById("demo").innerHTML = "How may I assist you?"    
-    
+    function myFunction() {
+        document.getElementById("demo1").innerHTML = "Hello human";
+        document.getElementById("demo2").innerHTML = "How may I assist you?";
+    }
+    </script>
+
 </body>
 </html>
