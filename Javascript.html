@@ -3,16 +3,17 @@
 <body>
 <h1>Javascript Variables</h1>
 
-<p> I'm uisng const in this example instead of let or var.</p>
+<p> I'm using a mix of variable declarations in this example.</p>
 
 <p id="demo"></p>
 
 <script>
-const x = 7;
-const y = 6;
-const z = x + y;
+var price = 10;
+var tax = 1.5;
+const greed = 1.5
+const total = price + tax + greed;
 document.getElementById("demo").innerHTML = 
-"The value of z is" + z;    
+"The total is" + total;    
 </script>
 
 </body>
