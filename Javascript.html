@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-
 <html>
 <body>
 
 <h1 id="h"></h1>
-<p1 id="p1"></p1>
-<p2 id="p2"></p2>
-<p3 id="p3"></p3>
-<p4 id="p4"></p4>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3" style="display:none; color:red;"></p>
+
+<button onclick="handleClick()">DO NOT click this button</button>
 
 <script>
-document.getElementById("h").innerHTML = "This is just a basic webpage"
-document.getElementById("p1").innerHTML = "DO NOT check the code."
-// Hidden text:    
-//document.getElementById("p2").innerHTML = "When will seeing only what's displayed on the webpage be enough for you?"
-//document.getElementById("p3").innerHTML = "Are you that dissatisfied in life that you can't just accept what's given"
-//document.getElementById("p4").innerHTML = "and be greatful for it? That's quite sad, honestly."
+    document.getElementById("h").innerHTML = "This is just a basic webpage.";
+    document.getElementById("p1").innerHTML = "DO NOT click that button.";
+
+    function handleClick() {
+        document.getElementById("p2").innerHTML =
+            "Are you that bored and dissatisfied in life that you can't just " +
+            "be happy with what's given to you? What, the webpage wasn't enough? You just HAD to click the button just because " +
+            "your incurable, ravenous curiosity wasn't satisfied with what was offered? How UNGRATEFUL. Shame on you!";
+
+        document.getElementById("p3").style.display = "block";
+        document.getElementById("p3").innerHTML =
+            "Are you so miserable and empty, so desperate for something to fill the void that even clicking the button wasn't enough for you, " +
+            "so you had to go and click that oh-so-tempting F12 key and see what was hiding in the HTML? Pathetic.";
+    }
 </script>
 
 </body>
