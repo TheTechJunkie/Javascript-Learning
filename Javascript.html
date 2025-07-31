@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Javascript Arithmetic</h2>
+<h2>Javascript Redeclaration</h2>
 
 <p id="demo"></p>
 
 <script>
-let _yourName = "Taki";
-let _yourLastName = "Tachibana";
-document.getElementById("demo").innerHTML = _yourName + " " + _yourLastName;
+//variable    
+var firstName = "Ben"; //if this line is commented out, firstName = Jonathan
+//variable redeclared
+var firstName = "Jonathan"; //if this line is commented out, firstName = Ben
+document.getElementById("demo").innerHTML = firstName;
 </script>
 
 </body>
