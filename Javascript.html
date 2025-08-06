@@ -5,9 +5,9 @@
 
 <p id="demo"></p>
 <script>
-/* Unless parentheses are present, in which 
-the numbers inside the parentheses are computed first */
-document.getElementById("demo").innerHTML = (1 + 2) * 3;
+/* If multiple operations have the same
+precedence, the computations happens left to right */
+document.getElementById("demo").innerHTML = 1 + 2 - 3 + "<br>" + 8 * 5 / 3;
 </script>
 
 </body>
