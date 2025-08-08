@@ -6,13 +6,10 @@
 <p id="demo"></p>
 
 <script>
-/* Since Javascript evaluates expressions from left
-to right, the value of x is going to be the result of
-64 and 128 added together, since they're treated as numbers
-and then it's going to add the string to the result of the
-numbers added together
+/* In this example, since the string comes before the numbers,
+Javascript will interpret the numbers as strings.
 */    
-let x = 64 + 128 + "Super Mario"
+let x = "Super Mario" + 64 + 128;
 document.getElementById("demo").innerHTML = x;
 </script>
 
