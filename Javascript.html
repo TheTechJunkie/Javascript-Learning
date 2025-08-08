@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Javascript Assignments</h1>
-<h2>Simple Assignments</h2>
+<h1>Javascript Data Types</h1>
 
 <p id="demo"></p>
 
 <script>
-let x;
-document.getElementById("demo").innerHTML = x ??= 5;
+/* Since Javascript evaluates expressions from left
+to right, the value of x is going to be the result of
+64 and 128 added together, since they're treated as numbers
+and then it's going to add the string to the result of the
+numbers added together
+*/    
+let x = 64 + 128 + "Super Mario"
+document.getElementById("demo").innerHTML = x;
 </script>
 
 </body>
