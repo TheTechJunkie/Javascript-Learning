@@ -6,8 +6,10 @@
 <p id="demo"></p>
 
 <script>
-let thing; // Value is undefined, type is undefined
-document.getElementById("demo").innerHTML = thing + "<br>" + typeof thing; 
+let thing = "brick";
+thing = undefined;
+document.getElementById("demo").innerHTML = "<p>The value of thing is " + thing + 
+"<p>The typeof thing is " + typeof thing;    
 </script>
 
 </body>
