@@ -6,11 +6,10 @@
 <p id="demo"></p>
 
 <script>
-let x; // x is undefined
-x = 64; // x is now a number, 64
-x = 128; // x is now 128
-x = "Super Mario" // x is now a string, "Super Mario"
-document.getElementById("demo").innerHTML = x; // The final output will be "Super Mario"
+// A string is a series of characters, and is written inside quotation marks ("")    
+let name1 = "Super Mario" // Strings can be written with two quotation marks ("")
+let name2 = 'Super Mario' // Or they can be written with single quotation marks ('')
+document.getElementById("demo").innerHTML = name1 + "<br>" + name2;
 </script>
 
 </body>
