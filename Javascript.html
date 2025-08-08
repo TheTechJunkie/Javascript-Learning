@@ -6,10 +6,11 @@
 <p id="demo"></p>
 
 <script>
-// A string is a series of characters, and is written inside quotation marks ("")    
-let name1 = "Super Mario" // Strings can be written with two quotation marks ("")
-let name2 = 'Super Mario' // Or they can be written with single quotation marks ('')
-document.getElementById("demo").innerHTML = name1 + "<br>" + name2;
+// You can use quotes inside a string, as long as they don't match the quotes surrounding the string
+let question = "'How are you?'"; // In this example, 'How are you' is inside single quotation marks ('')
+let answer1 = "'I'm good, thank you!'"; // single quotation marks ('') inside string
+let answer2 = '"I am well, thank you!"'; // double quotation marks ("") inside string 
+document.getElementById("demo").innerHTML = question + "<br>" + answer1 + "<br>" + answer2;
 </script>
 
 </body>
