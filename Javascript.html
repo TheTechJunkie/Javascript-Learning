@@ -6,10 +6,8 @@
 <p id="demo"></p>
 
 <script>
-document.getElementById("demo").innerHTML = 
-typeof 0 + "<br>" +
-typeof 1 + "<br>" + 
-typeof (2 + 2);    
+let thing; // Value is undefined, type is undefined
+document.getElementById("demo").innerHTML = thing + "<br>" + typeof thing; 
 </script>
 
 </body>
