@@ -6,10 +6,14 @@
 <p id="demo"></p>
 
 <script>
-let bigThree = ["Nintendo","Microsoft","Sony"];
-document.getElementById("demo").innerHTML = bigThree[0]; /* "Nintendo" is 0 in this array, 
-                                                             so it is first and is specified
-                                                             to be the only entry in the array to output*/
+const brand = {
+    brandName : "Nintendo",
+    ageOfCompany : 135,
+    product : "videoGames"
+};
+
+document.getElementById("demo").innerHTML = brand.brandName + " is a " + brand.ageOfCompany + 
+"-year old " + "Japanese company.";
 </script>
 
 </body>
