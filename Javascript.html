@@ -6,11 +6,11 @@
 <p id="demo"></p>
 
 <script>
-/* In this example, since the string comes before the numbers,
-Javascript will interpret the numbers as strings.
-*/    
-let x = "Super Mario" + 64 + 128;
-document.getElementById("demo").innerHTML = x;
+let x; // x is undefined
+x = 64; // x is now a number, 64
+x = 128; // x is now 128
+x = "Super Mario" // x is now a string, "Super Mario"
+document.getElementById("demo").innerHTML = x; // The final output will be "Super Mario"
 </script>
 
 </body>
