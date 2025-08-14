@@ -10,8 +10,13 @@ function toCelsius(fahrenheit) {
     return 5/9 * (fahrenheit-32);
 }
 
-let value = toCelsius(); // incorrect parameters
-document.getElementById("demo").innerHTML = value; // output will be NaN
+let value = toCelsius; // will return the function, not the function result
+/* output will be
+function toCelsius(fahrenheit) {
+    return 5/9 * (fahrenheit-32);
+}
+ */
+document.getElementById("demo").innerHTML = value;
 </script>
 
 </body>
