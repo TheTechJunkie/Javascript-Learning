@@ -6,17 +6,11 @@
 <p id="demo"></p>
 
 <script>
-function toCelsius(fahrenheit) {
-    return 5/9 * (fahrenheit-32);
-}
+// before Arrow    
+let thisFunction = function(a, b) {return a * b};
 
-let value = toCelsius; // will return the function, not the function result
-/* output will be
-function toCelsius(fahrenheit) {
-    return 5/9 * (fahrenheit-32);
-}
- */
-document.getElementById("demo").innerHTML = value;
+let result = thisFunction(4, 4);
+document.getElementById("demo").innerHTML = "The product is " + result;
 </script>
 
 </body>
