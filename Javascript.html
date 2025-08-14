@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Javascript Data Types</h1>
+<h1>Javascript Functions</h1>
 
 <p id="demo"></p>
 
 <script>
-let thing = "";
-document.getElementById("demo").innerHTML = "The value is " + thing + "<br>" + "The type is " + typeof thing;
+function thisFunction(a1, a2) {
+    return a1 * a2;
+}    
+let result = thisFunction(8, 4);
+
+document.getElementById("demo").innerHTML = "The result is " + result;
 </script>
 
 </body>
